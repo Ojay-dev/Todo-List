@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+header h1 {
+  font-family: Roboto Mono, monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  text-align: center;
+  line-height: 73px;
+  width: 90%;
+  margin: auto;
+  margin-block-start: 6.25rem;
+  margin-block-end: 2.25rem;
+  color: #C4C4C4;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+section input[type="search"] {
+  padding: .5rem;
+  outline: 0;
+  border-width: 0;
+  border-block-end: 1px solid #C4C4C4;
+  color: #999999;
+  font-size: 1rem;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  width: 40%;
+  margin-block-start: 5rem;
+  height: 3rem;
+  font-size: 16px;
+  line-height: 35px;
+
+}
+
+section input[type="search"]::placeholder {
+  color: rgba(196, 196, 196, 0.5);
+}
+
+section>div {
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 0 50px;
+  width: 45%;
+}
+
+section>div>div {
+  padding: 40px 0 20px;
+  color: #999999;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.22);
+}
+
+section>div>div:last-child {
+  margin-block-end: 3rem;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

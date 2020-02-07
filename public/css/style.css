@@ -43,12 +43,25 @@ section input[type="search"]::placeholder {
   color: rgba(196, 196, 196, 0.5);
 }
 
+
 section>div {
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 30px;
   padding: 0 50px;
   width: 45%;
+}
+
+section h2 {
+  font-family: Roboto Mono, monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 73px;
+  width: 90%;
+  margin: auto;
+  color: #C4C4C4;
 }
 
 section>div>div {
